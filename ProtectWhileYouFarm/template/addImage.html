@@ -1,0 +1,65 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/800df34fb4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'style/addImage.css' %}">
+    <title>Protect While You Farm</title>
+    <style>
+        h3 {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
+      }
+    img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 40%;
+      }
+      </style>
+</head>
+<body>
+    <header class="header">
+        <div class="nav">
+            <div class="logo">
+                <h1>Protect While You Farm</h1>
+            </div>
+            <nav class="navbar">
+                <a href="/home">home</a>
+            </nav>
+        </div>
+        <div class="content">
+            <div class="heading">
+                <h2>Crops are our the wisest pursuit!</h2>
+            </div>
+            <br><br><br>
+            <div class="box">
+   
+    <form id="innerbox" method="post" enctype="multipart/form-data" action="predictDisease">
+  
+ {% csrf_token %}
+ <div class="col-md-4 col-sm-4"><label for="fname">Upload Image File Here:</label> </div> <input name="filePath" type="file"><br><br>
+ <br>
+ <input type="submit" value="Submit" ></div>
+ <br><br><br>
+ <div class="box">
+     <br>
+    <h3>Your plant image has been predicted as: {{predictedLabel}}</h3>
+ <img id = innerbox src="{{filePathName}}" alt="imagename" style="align-content: center;">
+</div>
+</form>
+</div>
+            
+</div>
+<div class="images">
+    <img src="{% static 'images/image1.jpg' %}" class="im1" alt="image" height="200px">
+</div>
+</header>
+<br>
+
+

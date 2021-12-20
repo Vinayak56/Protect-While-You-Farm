@@ -1,0 +1,81 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/800df34fb4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'style/home.css' %}">
+    <title>Protect While You Farm</title>
+</head>
+<body>
+    <header class="header">
+        <div class="nav">
+            <div class="logo">
+                <h1>Protect While You Farm</h1>
+            </div>
+            <nav class="navbar">
+                <a href="addImage">services</a>
+            </nav>
+        </div>
+        <div class="content">
+            <div class="heading">
+                <h2>One page promising to detect your crops' disease!</h2>
+            </div>
+            <div class="scontent">
+                <p>Get Right Choice & Make Perfect Decisions About Your Farming Strategy.</p>
+            </div>
+
+            <div class="rbtn">
+                <label for="img1"></label>
+                <label for="img2"></label>
+                <label for="img3"></label>
+            </div>
+        </div>
+
+        <div class="images">
+            <input type="radio" name="radio" id="img1" checked>
+            <input type="radio" name="radio" id="img2" >
+            <input type="radio" name="radio" id="img3" >
+            <img src="{% static 'images/acc2.jpg' %}" class="im1" alt="image">
+            <img src="{% static 'images/acc.jpg' %}" class="im2" alt="image">
+            <img src="{% static 'images/acc5.jpg' %}" class="im3" alt="image">
+        </div>
+    </header>
+
+    <section class="home" id="home">
+        <h1>Welcome to Protect While You Farm</h1>
+        
+        <div class="flt">
+            <div class="txt">
+                <p style="align-items: justify;"> Half of the world population is dependent on agriculture which is quite evident by the amount of agricultural land in our earth. Agriculture is one of the main sources of revenue in the world.
+                    Researches are being conducted to increase the productivity
+                    and improve the quality of crop at a reduced expense.
+                    Therefore detection of disease for the crops plays a vital role
+                    in production and to avoid loss. </p>
+            </div>
+            <div class="simg">
+                <i class="fas fa-atom"></i>
+            </div>
+        </div>
+    </section>
+    <section class="showcase" id="explore">
+        <div class="container">
+            <div class="row row1">
+                <div class="img-box">
+                    <img src="{% static 'images/agricultureBG4.png' %}" alt="Image Description">
+                </div>
+                <div class="text-box">
+                    <h2 class="lg-heading text-black">Disease Detection</h2>
+                    <p class="text-gray">Agriculture industry is
+                        still thriving on outdated technical methodologies. Improper
+                        diagnosis of plant disease may lead to huge losses in terms of
+                        production, time, cost and product quality.</p>
+                    <a href="{% static '' %}" class="btn btns">More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

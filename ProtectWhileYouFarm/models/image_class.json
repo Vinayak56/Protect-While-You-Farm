@@ -1,0 +1,11 @@
+
+{"0": ["0", "Plant name: Apple, Disease name: Apple Scab"], 
+    "1": ["1", "Plant name: Apple, Disease name: Apple Rust"],
+    "2": ["2", "Plant name: Corn(Maize), Disease name: Common Rust"],
+    "3": ["3", "Plant name: Corn(Maize), Disease name: Your plant is Healthy"],
+    "4": ["4", "Plant name: Potato, Disease name: Early Blight"],
+    "5": ["5", "Plant name: Potato, Your plant is Healthy"],
+    "6": ["6", "Plant name: Tomato, Disease name: Early Blight"],
+    "7": ["7", "Plant name: Tomato, Your plant is Healthy"],
+    "8": ["8", "Plant name: Totato, Disease name: Yellow Leaf Curl Virus"]
+}

@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+html{
+    font-size: 62.5%;
+}
+*{
+    font-family: 'Poppins', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: all 0.1s ease-in-out;
+}
+*::selection{
+    background-color: #B6C9F0;
+    color: #CE1212;
+}
+.body{
+    position: relative;
+    width: 100vw;
+}
+hr{
+    border: 0.2rem solid rgba(145, 144, 144, 0.7);
+    max-width: 85rem;
+    width: 90%;
+    margin: 2.3rem auto;
+}
+.btn{
+    display: inline-block;
+    width: 13rem;
+    height: 4.3rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    padding: 1.3rem 0;
+    background-color: #583D72;
+    border-radius: 4%;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #FFDF6B;
+    color: black;
+}
+header{
+    height: 100vh;
+}
+.header .nav{
+    display: flex;
+    justify-content: space-between;
+    max-width: 85rem;
+    width: 90%;
+    margin: 2rem auto;
+    position: relative;
+    z-index: 2;
+}
+.header .nav .logo{
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    color: #FF5200;
+    cursor: pointer;
+}
+.header .nav .logo:hover{
+    color: #7C203A;
+}
+.header .nav .navbar{
+    margin: auto 0;
+}
+.header .nav .navbar a{
+    margin-left: 4rem;
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: #FF5200;
+    text-transform: uppercase;
+}
+.header .nav .navbar a:hover{
+    color: #7C203A;
+}
+.header .content{
+    max-width: 85rem;
+    width: 90%;
+    margin: 0 auto;
+    z-index: 2;
+    margin-top: 5.5rem;
+    position: relative;
+}
+.header .content .heading{
+    font-size: 3rem;
+    width: 70%;
+    line-height: 5.5rem;
+    color: #FF5200;
+}
+.header .content .scontent{
+    font-size: 2rem;
+    width: 67%;
+    margin: 2.3rem 0;
+    color: #FF5200;
+}
+.header .images{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow: hidden;
+    height: 95vh;
+    width: 100%;
+    position: absolute;
+    top: 0; left: 0;
+}
+.header .images input{
+    display: none;
+}
+.header .images img{
+    width: 100%;
+    height: 100%;
+}
+.header .content .rbtn{
+    display: flex;
+    position: absolute;
+    top: 65vh;
+}
+.header .content .rbtn label{
+    width: 1.2rem;
+    height: 1.2rem;
+    border: 0.6rem solid rgba(255, 255, 255, 0.521);
+    border-radius: 50%;
+    margin-right: 2rem;
+    cursor: pointer;
+}
+.header .content .rbtn label:hover{
+    transform: scale(1.4);
+    border: 0.6rem solid white;
+}
+#img1:checked ~ .im1{
+    margin-left: 0;
+}
+#img2:checked ~ .im2{
+    margin-left: -100%;
+}
+#img3:checked ~ .im3{
+    margin-left: -200%;
+}
+
+.home{
+    max-width: 85rem;
+    width: 90%;
+    margin: 0rem auto;
+}
+.home h1{
+    font-size: 4.5rem;
+    text-align: center;
+}
+.home .flt{
+    margin: 2rem 0;
+}
+.home .flt .txt{
+    float: left;
+    width: 70%;
+}
+.home .flt .txt p{
+    font-size: 2rem;
+    text-align: justify;
+}
+.home .flt .simg{
+    float: right;
+    width: 30%;
+    text-align:end
+}
+.home .flt .simg i{
+    font-size: 24rem;
+    color: #AAAAAA;
+    animation-name: change-color;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+@keyframes change-color{
+    0%{
+        color: grey;
+        transform: rotate(0deg);
+    }
+    25%{
+        color: blue;
+        transform: rotate(90deg);
+    }
+    50%{
+        color: red;
+        transform: rotate(180deg);
+    }
+    75%{
+        color: black;
+        transform: rotate(270deg);
+    }
+    100%{
+        color: gray;
+        transform: rotate(360deg);
+    }
+}
+.home .flt::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.showcase{
+    padding-top: 5rem;
+    height: 100%;
+    max-width: 85rem;
+    width: 90%;
+    margin: 0rem auto;
+}
+.row{
+    height: 400px;
+    background-color: #fff;
+    box-shadow: 15px 15px 10px 0px rgb(95, 94, 94);
+}
+.row1{
+    margin-bottom: 10rem;
+}
+.row1 .img-box,.row2 .text-box{
+        float: left;
+        width: 50%;
+}
+.row1 .text-box,.row2 .img-box{
+    float: right;
+    width: 50%;
+}
+.row .img-box{
+    height: 100%;
+}
+.row .text-box{
+    padding: 3rem;
+}
+.row .img-box img{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
